@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <script type="module" src="./app/js/script.js"></script>
+  </head>
+  <body>
+    <section id="fbt">
+      <div class="title">Frequently bought together</div>
+      <div class="container" id="main-container">
+        <div class="card">
+          <div class="card__image">
+            <image src="./app/assets/product1.png" alt="product1"></image>
+            <div class="image-badge-container">
+              <div class="card__badge card__bonus-badge">
+                <span>BONUS</span>
+              </div>
+              <div class="card__new-badge">
+                <span>NEW</span>
+              </div>
+            </div>
+            <div>
+              <img src="app/assets/mindful-brand.svg" id="mindful-badge" />
+            </div>
+          </div>
+          <div class="card__details">
+            <hr />
+            <div class="card__review u-padding-top-small">
+              <div
+                class="card-options"
+                style="--rating: 2.3"
+                aria-label="Rating of this product is 2.3 out of 5."
+              >
+                500ml|250ml
+              </div>
+              <div class="card-rating">(24)</div>
+            </div>
+            <div class="card__heading">
+              <div class="card__heading-main">
+                This Item: <span>HOLISTIC HAIR</span>
+              </div>
+              <div class="card__heading-sub">Sensitive Conditioner</div>
+            </div>
+            <div class="card__badge">
+              <span>SALE</span>
+            </div>
+
+            <div class="card__amount">
+              <div class="card__dicount-amount">NZ$23.90</div>
+              <div class="card__old-amount">RRP <span>NS$31.99</span></div>
+            </div>
+            <button type="button" class="card__options" id="showDetailBtn">
+              <div class="card__button">
+                <span>250ml</span>
+                <span>NZ$23.90</span>
+              </div>
+              <div class="bg-chevron_down"></div>
+            </button>
+          </div>
+        </div>
+        <div class="content-divider">
+          <hr />
+          <div class="plus-icon">
+            <div class="bg-plus"></div>
+          </div>
+        </div>
+        <div class="carousal">
+          <div class="icon-container">
+            <div class="bg-chevron_left"></div>
+          </div>
+          <div class="carousal-card-container" id="carousalCardContainer"></div>
+          <div class="icon-container">
+            <div class="bg-chevron_right"></div>
+          </div>
+        </div>
+        <hr />
+        <div class="total-container">
+          <div class="total">
+            <div class="total-details">
+              <div class="total__items">3 Items added</div>
+              <div class="total__bundle">Total Bundle Price</div>
+              <div class="total__amount">
+                <div class="total__discount">NZ$58.90</div>
+                <div class="total_old">RRP <span>NZ$62.99</span></div>
+              </div>
+              <div class="total__save">
+                You save: <span> NZ$11.79 (25%)</span>
+              </div>
+            </div>
+            <div style="margin-top: 20px">
+              <div class="total__button">ADD ALL 3 TO CART</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal-container" id="modalContainer">
+      <div class="modal" id="modal">
+        <div class="close-container">
+          <button class="closes" id="modalCloseBtn-mobile">
+            <div class="bg-Union"></div>
+          </button>
+        </div>
+        <div class="modal-details-container">
+          <div class="modal-details-container__content">
+            <div class="product-details">
+              <div class="product-details__top">
+                <div class="product-details__left">
+                  <div class="product-brand">HOLISTIC HAIR</div>
+                  <div class="product-name">Sensitive Conditioner</div>
+                  <div class="product-rating-desktop">
+                    <div class="star card-rating-modal"></div>
+                    <a href="" class="review">22 Reviews</a>
+                  </div>
+                </div>
+                <div class="product-details__right">
+                  <button class="closes" id="modalCloseBtn-desktop">
+                    <div class="bg-Union"></div>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab_box">
+              <button class="tab_btn active">Overview</button>
+              <button class="tab_btn">Description</button>
+              <button class="new-tab">
+                <div class="bg-new_tab"></div>
+                <span> Open in a new tab </span>
+              </button>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="product-view">
+          <div class="product-view__left">
+            <div class="content-box">
+              <div class="content active">
+                <div class="product-box">
+                  <div class="all-images">
+                    <div class="small-images">
+                      <img
+                        src="app/assets/product1.png"
+                        class="image-tab_btn active"
+                      />
+                      <img
+                        src="app/assets/product3.svg"
+                        class="image-tab_btn"
+                      />
+                    </div>
+                    <div class="main-images">
+                      <img
+                        src="app/assets/product1.png"
+                        class="image-content active"
+                      />
+                      <img
+                        src="app/assets/product3.svg"
+                        class="image-content"
+                      />
+                    </div>
+                    <img src="app/assets/mindful-brand.svg" id="mindful" />
+                  </div>
+                  <div class="product-rating-mobile">
+                    <div class="star card-rating-modal"></div>
+                    <a href="" class="review">22 Reviews</a>
+                  </div>
+                </div>
+              </div>
+              <div class="content" style="border: none">
+                <strong>Holistic Hair Sensitive Shampoo</strong> is a botanical
+                shampoo formulated to cleanse & calm sensitive or irritated
+                scalps. Lavender & Apple Cider Vinegar work to purify the
+                follicle to restore the scalp’s normal pH balance. Neroli &
+                Chamomile provide vitality and shine for healthy beautiful hair.
+              </div>
+            </div>
+          </div>
+          <div class="product-view__right">
+            <div class="content-box">
+              <p class="product-option-header">Select an option</p>
+              <div class="option-container">
+                <div class="option-tab_box">
+                  <button class="option-tab_btn active">
+                    <span>250ml</span>
+                    <span>NZ$23.90</span>
+                    <div class="card__badge card__bonus-badge">
+                      <span>BONUS</span>
+                    </div>
+                  </button>
+                  <button class="option-tab_btn">
+                    <span>500ml</span>
+                    <span>NZ$35.20</span>
+                    <div class="card__badge card__bonus-badge">
+                      <span>BONUS</span>
+                    </div>
+                  </button>
+                </div>
+                <div class="option-content-box">
+                  <div class="option-content active">
+                    <div class="option-content__sale">
+                      <div class="card__badge">
+                        <span>SALE</span>
+                      </div>
+                      <div class="card__dicount-amount">NZ$23.90</div>
+                    </div>
+                    <div class="option-content__sale">
+                      <div class="you-save">You Save</div>
+                      <div class="you-save">NZ$8.09 (25%)</div>
+                    </div>
+                    <div class="option-content__sale">
+                      <div class="our-price">Our price</div>
+                      <div
+                        class="our-price"
+                        style="text-decoration-line: line-through"
+                      >
+                        NZ$30.70
+                      </div>
+                    </div>
+                    <div class="option-content__sale">
+                      <div class="rrp">RRP</div>
+                      <div
+                        class="rrp"
+                        style="text-decoration-line: line-through"
+                      >
+                        NZ$31.99
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option-content">
+                    <div class="option-content__sale">
+                      <div class="card__badge">
+                        <span>SALE</span>
+                      </div>
+                      <div class="card__dicount-amount">NZ$35.20</div>
+                    </div>
+                    <div class="option-content__sale">
+                      <div class="you-save">You Save</div>
+                      <div class="you-save">NZ$8.09 (25%)</div>
+                    </div>
+                    <div class="option-content__sale">
+                      <div class="our-price">Our price</div>
+                      <div
+                        class="our-price"
+                        style="text-decoration-line: line-through"
+                      >
+                        NZ$30.70
+                      </div>
+                    </div>
+                    <div class="option-content__sale">
+                      <div class="rrp">RRP</div>
+                      <div
+                        class="rrp"
+                        style="text-decoration-line: line-through"
+                      >
+                        NZ$31.99
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quantity-wrapper">
+                <h3>Quantity:</h3>
+                <div class="quantity-container">
+                  <div class="quantity">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                  </div>
+                </div>
+              </div>
+              <button class="update" id="modalCloseBtn">UPDATE</button>
+              <hr />
+              <div class="description">
+                <div class="description-header">Description</div>
+                <div class="description-content" style="border: none">
+                  <strong>Holistic Hair Sensitive Shampoo</strong> is a
+                  botanical shampoo formulated to cleanse & calm sensitive or
+                  irritated scalps. Lavender & Apple Cider Vinegar work to
+                  purify the follicle to restore the scalp’s normal pH balance.
+                  Neroli & Chamomile provide vitality and shine for healthy
+                  beautiful hair.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

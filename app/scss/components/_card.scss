@@ -1,0 +1,410 @@
+.card {
+  background-color: $white;
+  padding: 1rem;
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    img {
+      margin: 0 10px 10px;
+      width: calc(100% - 20px);
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
+  }
+
+  &__details {
+    flex: 1;
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $light-100;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  &__review {
+    display: flex;
+    justify-content: space-between;
+    color: $gray-200;
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 1rem;
+  }
+
+  &__heading {
+    font-size: 14px;
+    font-style: normal;
+
+    line-height: 19px;
+    letter-spacing: 0.25px;
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  &__heading-main {
+    color: $green-300;
+    font-weight: 700;
+
+    span {
+      color: $gray-500;
+    }
+  }
+  &__heading-sub {
+    color: $gray-500;
+    font-weight: 400;
+  }
+
+  &__badge {
+    display: flex;
+    width: 53px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #eb9e32;
+
+    span {
+      color: #fff;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  .image-badge-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    gap: 10px;
+  }
+
+  &__bonus-badge {
+    background-color: $green-200;
+
+    span {
+      color: #fff;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  &__new-badge {
+    background-color: $green-200;
+    display: flex;
+    width: 10px;
+    height: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50%;
+    background: $gray-500;
+
+    span {
+      color: #fff;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  #mindful-badge {
+    position: absolute;
+    width: 56px;
+    height: 52px;
+    right: 0;
+  }
+
+  &__amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+  }
+
+  &__dicount-amount {
+    color: #eb9e32;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  &__old-amount {
+    color: #59595b;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    span {
+      text-decoration-line: line-through;
+    }
+  }
+
+  &__options {
+    margin-top: 1rem;
+    cursor: pointer;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid hsl(240, 1%, 35%);
+    background: #fff;
+  }
+  &__button {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 0.5rem;
+
+    span {
+      &:last-child {
+        color: $orange-200;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.total {
+  height: 15.437rem;
+  width: 22.437rem;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+
+  .total-details {
+    display: flex;
+  }
+
+  &__items {
+    color: $gray-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+  }
+
+  &__bundle {
+    color: $gray-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+  }
+
+  &__amount {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 0.5rem;
+  }
+
+  &__discount {
+    color: $orange-200;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+
+  &__old {
+    color: $dark-200;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    span {
+      text-decoration-line: line-through;
+    }
+  }
+
+  &__save {
+    color: $gray-600;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding-top: 0.1rem;
+  }
+
+  &__button {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $green-300;
+    background: $green-300;
+    color: $white;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+}
+
+@include xs {
+  .card {
+    display: flex;
+    min-width: 22.375rem;
+    min-height: 10.4375rem;
+    box-shadow: none;
+    margin-bottom: 0;
+
+    img {
+      height: 60%;
+    }
+
+    hr {
+      display: none;
+    }
+
+    #mindful-badge {
+      width: 22px;
+      height: 20px;
+    }
+  }
+  .content-divider {
+    hr {
+      border-top: 1px solid $light-100;
+      margin: 25px 0;
+    }
+    hr:after {
+      content: url("../../../app/assets/plus.svg");
+      left: 50%;
+      position: absolute;
+      transform: translateY(-50%) translateX(-50%);
+      padding: 20px;
+      background: #fff;
+    }
+
+    .plus-icon {
+      display: none;
+    }
+  }
+
+  .carousal {
+    .carousal-card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  hr {
+    display: block;
+    border: 1px solid $light-100;
+  }
+
+  .total {
+    box-shadow: none;
+    flex: 1;
+
+    .total-details {
+      flex-direction: column;
+      align-items: center;
+
+      .total__items {
+        display: none;
+      }
+    }
+  }
+}
+
+@include lg {
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-height: 39.625rem;
+    min-width: 21.625rem;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0.5rem;
+
+    img {
+      height: 100%;
+    }
+
+    hr {
+      display: block;
+    }
+
+    #mindful-badge {
+      width: 56px;
+      height: 52px;
+    }
+  }
+
+  .content-divider {
+    hr {
+      display: none;
+    }
+    .plus-icon {
+      display: block;
+    }
+  }
+
+  .carousal {
+    .carousal-card-container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+
+  hr {
+    display: none;
+  }
+
+  .total {
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.15);
+    flex: none;
+    .total-details {
+      align-items: flex-start;
+      .total__items {
+        display: block;
+      }
+    }
+  }
+}

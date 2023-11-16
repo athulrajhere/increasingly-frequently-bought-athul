@@ -1,0 +1,71 @@
+#fbt {
+  .container {
+    display: grid;
+  }
+
+  .carousal {
+    display: grid;
+  }
+
+  .total-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@include xs {
+  section {
+    .container {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .carousal {
+      grid-template-columns: repeat(1, 1fr);
+
+      .carousal-card-container {
+        &:first-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}
+
+@include lg {
+  section {
+    .container {
+      grid-template-columns: 0.5fr 0.1fr 1fr 1fr;
+      padding: 2rem 8.56rem 0rem 8.56rem;
+      gap: 2.5rem;
+    }
+
+    .carousal {
+      grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+      .carousal-card-container {
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include xl {
+  section {
+    .container {
+      grid-template-columns: 0.5fr 0.1fr 2fr 2fr;
+      padding: 2rem 8.56rem 0rem 10rem;
+      gap: 2.5rem;
+    }
+
+    .carousal {
+      grid-template-columns: 0.1fr 0fr 0fr .1fr;
+      .carousal-card-container {
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

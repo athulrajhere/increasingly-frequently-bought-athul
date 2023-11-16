@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" fill="#F5F5F5"/>
+<g id="PDP" clip-path="url(#clip0_1_2)">
+<rect width="1440" height="5377" transform="translate(-388 -1593)" fill="white"/>
+<rect id="Rectangle 117" x="-387" y="-243" width="1440" height="654" fill="#E1E9E5"/>
+<g id="plus">
+<path id="Vector" d="M16 6.66663V25.3333" stroke="#22686C" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+<path id="Vector_2" d="M6.66699 16H25.3337" stroke="#22686C" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_2">
+<rect width="1440" height="5377" fill="white" transform="translate(-388 -1593)"/>
+</clipPath>
+</defs>
+</svg>
